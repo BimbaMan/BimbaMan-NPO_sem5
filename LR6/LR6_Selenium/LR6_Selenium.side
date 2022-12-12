@@ -1,0 +1,828 @@
+{
+  "id": "1babe848-81b3-4c27-9d61-ec50c8672a04",
+  "version": "2.0",
+  "name": "LR6_Selenium",
+  "url": "http://lyceum2.minsk.edu.by/",
+  "tests": [{
+    "id": "435191e4-ad31-4653-804e-a07feeb0c06d",
+    "name": "bx-nextprevTest",
+    "commands": [{
+      "id": "5e89b7d3-e8e0-4e39-8571-87d0b5b7496d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46d08a7d-2389-4147-b699-8088a69a3cf0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "05ae1073-d4af-4cb3-858b-8168bac672a9",
+      "comment": "",
+      "command": "while",
+      "target": "${x} < 10",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f043e36-febd-4958-8085-574289bdd570",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx-next",
+      "targets": [
+        ["css=.bx-next", "css:finder"],
+        ["xpath=//div[@id='layout']/div/div[4]/div/div/div[2]/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[193]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a16659e5-6539-4c2c-92f4-2eb81ef93e84",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${x}+1",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "eaf4b16e-d4de-4287-90f7-bb20113f7a6d",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aef11e52-7872-487b-88d4-3115adf7c90f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "47dd9dd6-4cbb-4fb7-b3b9-8169ef67c0cc",
+      "comment": "",
+      "command": "while",
+      "target": "${x} < 10",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6257e97a-327e-4476-a1be-8a6485ceaf20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx-prev",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18958cc1-cdcd-4b5b-b8f1-7cad1b6f64de",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${x}+1",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "b610c77b-0877-4f35-88d1-26b6caebcdfc",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d8f0449a-9c0d-4400-b0ce-e1a8c0e9af5e",
+    "name": "menuButtonsTest",
+    "commands": [{
+      "id": "d4850eed-a3cc-46d4-907f-29add8ead753",
+      "comment": "",
+      "command": "open",
+      "target": "http://lyceum2.minsk.edu.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a95d28da-9bee-48b2-8e3b-f5d49b38e71b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.parent:nth-child(1) > a",
+      "targets": [
+        ["css=.parent:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Одно окно')]", "xpath:link"],
+        ["xpath=//div[@id='h_menu']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1071')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61727cd2-cbca-4542-84c3-6d382cf2edf5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0:nth-child(2) > .parent:nth-child(2) > a",
+      "targets": [
+        ["css=.level_0:nth-child(2) > .parent:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'О лицее')]", "xpath:link"],
+        ["xpath=//div[@id='h_menu']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1041')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19a4fed1-82ae-4879-b11e-8fe97a5eb982",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0:nth-child(2) > .parent:nth-child(3) > a",
+      "targets": [
+        ["css=.level_0:nth-child(2) > .parent:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Учительская')]", "xpath:link"],
+        ["xpath=//div[@id='h_menu']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1051')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "146443d5-580a-4e08-b66b-afd1275b58df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0:nth-child(2) > .parent:nth-child(4) > a",
+      "targets": [
+        ["css=.level_0:nth-child(2) > .parent:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Лицеистам')]", "xpath:link"],
+        ["xpath=//div[@id='h_menu']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1321')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9688dd58-8fec-4a9a-854d-7957af233470",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0:nth-child(2) > .parent:nth-child(5) > a",
+      "targets": [
+        ["css=.level_0:nth-child(2) > .parent:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Родителям')]", "xpath:link"],
+        ["xpath=//div[@id='h_menu']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1061')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6920f9e-87ba-4492-afdb-800dbf00551b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0:nth-child(2) > .parent:nth-child(6) > a",
+      "targets": [
+        ["css=.level_0:nth-child(2) > .parent:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Сервисы')]", "xpath:link"],
+        ["xpath=//div[@id='h_menu']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1431')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1058adfc-dc92-4c38-a0ad-3f4b866d49e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0:nth-child(2) > li:nth-child(7) > a",
+      "targets": [
+        ["css=.level_0:nth-child(2) > li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Контакты')]", "xpath:link"],
+        ["xpath=//div[@id='h_menu']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=32921')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ca98799-010a-4562-a8e8-604096b497cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0:nth-child(2) > .parent:nth-child(8) > a",
+      "targets": [
+        ["css=.level_0:nth-child(2) > .parent:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Год исторической памяти')]", "xpath:link"],
+        ["xpath=//div[@id='h_menu']/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=53941')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f880f976-53d1-4030-8c6c-b277a8bbe0ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0:nth-child(2) > li:nth-child(9) > a",
+      "targets": [
+        ["css=.level_0:nth-child(2) > li:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Вспомнить все. Помнить каждого')]", "xpath:link"],
+        ["xpath=//div[@id='h_menu']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=64141')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[9]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0e4b6c99-1780-47b7-a42f-61e5d77199a6",
+    "name": "secondMenuButtonsTest",
+    "commands": [{
+      "id": "0dfcfe40-012c-4250-b750-201b4c72f64c",
+      "comment": "",
+      "command": "open",
+      "target": "http://lyceum2.minsk.edu.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbc9c111-b3ce-4571-abf6-d0e342e0340b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1649x901",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2086720d-4155-4c12-8c92-9abc71c3e4c4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,162)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d93f7c66-57dd-4af9-8e21-a07902e78ecc",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2061_ctl00",
+      "targets": [
+        ["id=__tab_Tabs_2061_ctl00", "id"],
+        ["css=#\\__tab_Tabs_2061_ctl00", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2061_ctl00']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2061_header']/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4edf3d36-e0cf-453d-890f-45661b8a892f",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2061_ctl01",
+      "targets": [
+        ["id=__tab_Tabs_2061_ctl01", "id"],
+        ["css=#\\__tab_Tabs_2061_ctl01", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2061_ctl01']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2061_header']/span[2]/span/span/span", "xpath:idRelative"],
+        ["xpath=//span[2]/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc47ef0e-a278-4cf4-bec1-2876ba039f31",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2061_ctl02",
+      "targets": [
+        ["id=__tab_Tabs_2061_ctl02", "id"],
+        ["css=#\\__tab_Tabs_2061_ctl02", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2061_ctl02']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2061_header']/span[3]/span/span/span", "xpath:idRelative"],
+        ["xpath=//span[3]/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8c24eb4-7cc5-4c27-ba14-dbcacb5e7008",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2061_ctl03",
+      "targets": [
+        ["id=__tab_Tabs_2061_ctl03", "id"],
+        ["css=#\\__tab_Tabs_2061_ctl03", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2061_ctl03']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2061_header']/span[4]/span/span/span", "xpath:idRelative"],
+        ["xpath=//span[4]/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb89d2da-4202-4629-bb4f-301748f2bb2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2061_ctl00",
+      "targets": [
+        ["id=__tab_Tabs_2061_ctl00", "id"],
+        ["css=#\\__tab_Tabs_2061_ctl00", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2061_ctl00']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2061_header']/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa783905-992d-43f3-a6a4-d0f6dff8773e",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2081_ctl00",
+      "targets": [
+        ["id=__tab_Tabs_2081_ctl00", "id"],
+        ["css=#\\__tab_Tabs_2081_ctl00", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2081_ctl00']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2081_header']/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85188157-2b86-49d7-8359-33dbc3a1cc2b",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2081_ctl01",
+      "targets": [
+        ["id=__tab_Tabs_2081_ctl01", "id"],
+        ["css=#\\__tab_Tabs_2081_ctl01", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2081_ctl01']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2081_header']/span[2]/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span[2]/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2564eb64-5e7d-4d84-81d8-0ebde358d5c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2081_ctl02",
+      "targets": [
+        ["id=__tab_Tabs_2081_ctl02", "id"],
+        ["css=#\\__tab_Tabs_2081_ctl02", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2081_ctl02']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2081_header']/span[3]/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span[3]/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8567e09-3dc7-4f59-90d0-7a5db198fab0",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2081_ctl03",
+      "targets": [
+        ["id=__tab_Tabs_2081_ctl03", "id"],
+        ["css=#\\__tab_Tabs_2081_ctl03", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2081_ctl03']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2081_header']/span[4]/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span[4]/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d89e9362-7543-48c2-bbcd-705134789502",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2081_ctl00",
+      "targets": [
+        ["id=__tab_Tabs_2081_ctl00", "id"],
+        ["css=#\\__tab_Tabs_2081_ctl00", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2081_ctl00']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2081_header']/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57a9dce5-f570-437b-9ba5-98b01c4332ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2601_ctl01",
+      "targets": [
+        ["id=__tab_Tabs_2601_ctl01", "id"],
+        ["css=#\\__tab_Tabs_2601_ctl01", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2601_ctl01']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2601_header']/span[2]/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span[2]/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62655312-dc01-416a-98d2-3ea63600c683",
+      "comment": "",
+      "command": "click",
+      "target": "id=__tab_Tabs_2601_ctl00",
+      "targets": [
+        ["id=__tab_Tabs_2601_ctl00", "id"],
+        ["css=#\\__tab_Tabs_2601_ctl00", "css:finder"],
+        ["xpath=//span[@id='__tab_Tabs_2601_ctl00']", "xpath:attributes"],
+        ["xpath=//div[@id='Tabs_2601_header']/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8a1e8149-1509-419d-9303-c78d87cde268",
+    "name": "popularSectionsTest",
+    "commands": [{
+      "id": "724bd563-3687-42f6-8a0d-c218f094e68a",
+      "comment": "",
+      "command": "open",
+      "target": "http://lyceum2.minsk.edu.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ede33f0-79ae-4af6-97d3-a4f70331c261",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0:nth-child(1) > li:nth-child(1) > a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f8310e5-d529-4d38-98a9-f16972112482",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popular li:nth-child(2) > a",
+      "targets": [
+        ["css=.popular li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Год исторической памяти')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=53941')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61936901-3497-4b64-8b18-1b27a2b40057",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popular li:nth-child(3)",
+      "targets": [
+        ["css=.popular li:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/ul/li[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3325a1fc-7d06-4f08-aaa3-07dce068f8af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popular li:nth-child(3) > a",
+      "targets": [
+        ["css=.popular li:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Государственный школьный стандарт')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=2601')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2159b886-b5a6-4280-aaf0-c523940729fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popular li:nth-child(4) > a",
+      "targets": [
+        ["css=.popular li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Правила педагогических работников')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=64081')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5adc2328-4105-4c3f-a76a-a39059db9345",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popular li:nth-child(5) > a",
+      "targets": [
+        ["css=.popular li:nth-child(5) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Наше здоровье')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=43231')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff841c20-972e-4c5a-9c87-e4bb9a9b672e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popular li:nth-child(6) > a",
+      "targets": [
+        ["css=.popular li:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Виртуальный методический кабинет')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=33061')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92dccf10-b904-4463-a7ab-5746e1f24b56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popular li:nth-child(7) > a",
+      "targets": [
+        ["css=.popular li:nth-child(7) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Пропускной режим')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=2631')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/ul/li[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27a9a82e-4013-4953-bd67-1c17ae9ba8ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popular li:nth-child(8) > a",
+      "targets": [
+        ["css=.popular li:nth-child(8) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Платные услуги')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=32881')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa8e8cf0-3703-4d89-be69-1030eaf5aafe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popular li:nth-child(9) > a",
+      "targets": [
+        ["css=.popular li:nth-child(9) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Профсоюзная страничка')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=2591')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[9]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d449489-b476-474b-9742-e300166e499b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0 > li:nth-child(10) > a",
+      "targets": [
+        ["css=.level_0 > li:nth-child(10) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'On-line сервисы')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=2111')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/ul/li[10]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4d7eda1-efec-427f-b695-d76484e3b28a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0 > li:nth-child(11) > a",
+      "targets": [
+        ["css=.level_0 > li:nth-child(11) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Гостевая книга')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[11]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=1441')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[11]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccb08412-5224-4dbc-9974-3faf8761f274",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0 > li:nth-child(12) > a",
+      "targets": [
+        ["css=.level_0 > li:nth-child(12) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Электронное обращение')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[12]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=2181')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[12]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "497d80e7-d02e-498f-8c6a-94d6fa76ba9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0 > li:nth-child(13) > a",
+      "targets": [
+        ["css=.level_0 > li:nth-child(13) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Инновационный проект')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[13]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=53501')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[13]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f4b86a5-a4d6-4006-916d-1fea2f53e565",
+      "comment": "",
+      "command": "click",
+      "target": "css=.level_0 > li:nth-child(14) > a",
+      "targets": [
+        ["css=.level_0 > li:nth-child(14) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Задать вопрос директору')])[3]", "xpath:link"],
+        ["xpath=//div[@id='REGION_1_DEFAULT']/div/div[2]/div/ul/li[14]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=64131')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[14]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7b4ae3e6-baee-47ed-b943-29120ae090f5",
+    "name": "siteMapTest",
+    "commands": [{
+      "id": "c2198848-eb35-4699-be44-40348d2f2129",
+      "comment": "",
+      "command": "open",
+      "target": "http://lyceum2.minsk.edu.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32517fce-f05d-43b9-ac51-c3e131ba6bc6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Карта сайта",
+      "targets": [
+        ["linkText=Карта сайта", "linkText"],
+        ["css=#site_map_link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Карта сайта')]", "xpath:link"],
+        ["xpath=//div[@id='site_map_link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1091')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Карта сайта')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd939b3e-b2e1-4e3b-86b6-ad8f41bd7711",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Профессии в картинах мировой живописи",
+      "targets": [
+        ["linkText=Профессии в картинах мировой живописи", "linkText"],
+        ["css=.parent:nth-child(9) > .level_3 li:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Профессии в картинах мировой живописи')]", "xpath:link"],
+        ["xpath=//div[@id='region_2_default']/div[2]/ul/li/ul/li[2]/ul/li[9]/ul/li[2]/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=53811')]", "xpath:href"],
+        ["xpath=//li[9]/ul/li[2]/ul/li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Профессии в картинах мировой живописи')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13dc365a-65ef-4f94-8be8-c63d58857be4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Карта сайта",
+      "targets": [
+        ["linkText=Карта сайта", "linkText"],
+        ["css=#site_map_link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Карта сайта')]", "xpath:link"],
+        ["xpath=//div[@id='site_map_link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1091')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Карта сайта')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcd216c1-b59a-4d50-a8c5-3f90c20ff5fb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Программные комплексы",
+      "targets": [
+        ["linkText=Программные комплексы", "linkText"],
+        ["css=.parent:nth-child(3) > .level_4 > li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Программные комплексы')]", "xpath:link"],
+        ["xpath=//div[@id='region_2_default']/div[2]/ul/li/ul/li[3]/ul/li[7]/ul/li[3]/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=2351')]", "xpath:href"],
+        ["xpath=//li[7]/ul/li[3]/ul/li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Программные комплексы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea578751-790b-441f-93f4-381fcf75c70c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Карта сайта",
+      "targets": [
+        ["linkText=Карта сайта", "linkText"],
+        ["css=#site_map_link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Карта сайта')]", "xpath:link"],
+        ["xpath=//div[@id='site_map_link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1091')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Карта сайта')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "650d8efd-1799-4454-9d4a-34775c568627",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ВИДЕО",
+      "targets": [
+        ["linkText=ВИДЕО", "linkText"],
+        ["css=.parent:nth-child(22) > .level_3 > li:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'ВИДЕО')])[2]", "xpath:link"],
+        ["xpath=//div[@id='region_2_default']/div[2]/ul/li/ul/li[2]/ul/li[22]/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=2131')])[2]", "xpath:href"],
+        ["xpath=//li/ul/li[2]/ul/li[22]/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e82008c1-1ebf-4150-8974-c12449077b0a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Карта сайта",
+      "targets": [
+        ["linkText=Карта сайта", "linkText"],
+        ["css=#site_map_link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Карта сайта')]", "xpath:link"],
+        ["xpath=//div[@id='site_map_link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1091')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Карта сайта')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eb5a65a-31d7-43ff-82cf-948aad4cc14e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ВАМ, уважаемые родители ПРОФрост",
+      "targets": [
+        ["linkText=ВАМ, уважаемые родители ПРОФрост", "linkText"],
+        ["css=.parent:nth-child(9) > .level_3 li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ВАМ, уважаемые родители ПРОФрост')]", "xpath:link"],
+        ["xpath=//div[@id='region_2_default']/div[2]/ul/li/ul/li[2]/ul/li[9]/ul/li[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=53731')]", "xpath:href"],
+        ["xpath=//li[9]/ul/li[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ВАМ, уважаемые родители ПРОФрост')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f61f8c7d-7801-486f-a1e1-681c7cc44720",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Карта сайта",
+      "targets": [
+        ["linkText=Карта сайта", "linkText"],
+        ["css=#site_map_link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Карта сайта')]", "xpath:link"],
+        ["xpath=//div[@id='site_map_link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1091')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Карта сайта')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8c7865d-9b8f-4918-9265-c6a66225033a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=График приема руководства лицея",
+      "targets": [
+        ["linkText=График приема руководства лицея", "linkText"],
+        ["css=.parent:nth-child(1) > .level_2 > li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'График приема руководства лицея')])[2]", "xpath:link"],
+        ["xpath=//div[@id='region_2_default']/div[2]/ul/li/ul/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=1241')])[2]", "xpath:href"],
+        ["xpath=//div/div[4]/div/div/div/div/div[2]/ul/li/ul/li/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac8ccbc2-42d8-4d3e-a16e-463ef4f1f173",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Карта сайта",
+      "targets": [
+        ["linkText=Карта сайта", "linkText"],
+        ["css=#site_map_link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Карта сайта')]", "xpath:link"],
+        ["xpath=//div[@id='site_map_link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1091')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Карта сайта')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eee63d7b-af13-43fc-8750-4d5afbe50d32",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Особенности становления профессиональной идентичности",
+      "targets": [
+        ["linkText=Особенности становления профессиональной идентичности", "linkText"],
+        ["css=.level_4 > li:nth-child(13) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Особенности становления профессиональной идентичности')]", "xpath:link"],
+        ["xpath=//div[@id='region_2_default']/div[2]/ul/li/ul/li[2]/ul/li[9]/ul/li[2]/ul/li[13]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=53961')]", "xpath:href"],
+        ["xpath=//li[9]/ul/li[2]/ul/li[13]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Особенности становления профессиональной идентичности')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a7a011c-ad54-46d1-8b0d-3b65a451d855",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Карта сайта",
+      "targets": [
+        ["linkText=Карта сайта", "linkText"],
+        ["css=#site_map_link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Карта сайта')]", "xpath:link"],
+        ["xpath=//div[@id='site_map_link']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru/main.aspx?guid=1091')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Карта сайта')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a83b7c3-dc74-43de-9161-c9e8a4d723b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Семья без насилия",
+      "targets": [
+        ["linkText=Семья без насилия", "linkText"],
+        ["css=.parent:nth-child(5) > .level_2 > li:nth-child(8) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Семья без насилия')])[2]", "xpath:link"],
+        ["xpath=//div[@id='region_2_default']/div[2]/ul/li/ul/li[5]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ru/main.aspx?guid=1471')])[2]", "xpath:href"],
+        ["xpath=//li/ul/li[5]/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c68b8460-6f22-43da-87c1-255e5802981f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["435191e4-ad31-4653-804e-a07feeb0c06d"]
+  }],
+  "urls": ["http://lyceum2.minsk.edu.by/", "http://sch71.minsk.edu.by/"],
+  "plugins": []
+}
