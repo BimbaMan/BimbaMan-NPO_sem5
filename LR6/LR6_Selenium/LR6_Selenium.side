@@ -228,13 +228,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "cbc9c111-b3ce-4571-abf6-d0e342e0340b",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1649x901",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "2086720d-4155-4c12-8c92-9abc71c3e4c4",
       "comment": "",
       "command": "runScript",
